@@ -1,0 +1,36 @@
+extends layout
+
+block content
+  h1= title
+  p  #{title} nodejs服务api接口说明
+  li  通过id删除商品:
+  a(href="http://localhost:3000/goodDel?id=115") http://localhost:3000/goodDel?id=115
+
+  li 添加商品：
+  a(href="http://localhost:3000/goodAdd?name=567&desc=全世界最好吃的苹果&price=12.00&sum=23") http://localhost:3000/goodAdd?name=567&desc=全世界最好吃的苹果&price=12.00&sum=23
+
+  li 通过id修改商品：
+  a(href="http://localhost:3000/goodUpdate?name=苹果&desc=【北京特产】送礼必备，赶紧抢购吧！&price=45.00&sum=12&id=1") http://localhost:3000/goodUpdate?name=苹果&desc=【北京特产】送礼必备，赶紧抢购吧！&price=45.00&sum=12&id=1
+
+  li 查询所有商品：
+  a(href="http://localhost:3000/goodAll	") http://localhost:3000/goodAll		
+
+  li 查询单个商品：
+  a(href="http://localhost:3000/goodById?id=112") http://localhost:3000/goodById?id=112
+  
+  li  通过id删除用户:
+  a(href="http://localhost:3000/users/userDel?id=115") http://localhost:3000/users/userDel?id=115
+
+  li 添加用户：
+  a(href="http://localhost:3000/users/userAdd?name=李四&age=30&pwd=123456789") http://localhost:3000/users/userAdd?name=李四&age=30&pwd=123456789
+
+  li 通过id修改用户：
+  a(href="http://localhost:3000/users/userUpdate?name=张三&age=20&pwd=123456&id=1") http://localhost:3000/users/userUpdate?name=张三&age=20&pwd=123456&id=1
+
+  li 查询所有用户：
+  a(href="http://localhost:3000/users/userAll") http://localhost:3000/users/goodAll		
+
+  li 根据id查找用户：
+  a(href="http://localhost:3000/users/userById?id=112") http://localhost:3000/users/userById?id=112
+  
+  
